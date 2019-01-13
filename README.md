@@ -1,2 +1,0 @@
-# Valerio
-My personal site
