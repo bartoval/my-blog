@@ -9,7 +9,7 @@ import markdownRenderer from '../components/MarkdownRenderer';
 
 const ProfilePicture = styled(Image)`
   border-radius: 50%;
-  transition: all 0.25s ease-out;
+  transition: all 0.35s ease-out;
 
   &:hover {
     border-radius: 20%;
