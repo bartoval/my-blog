@@ -15,28 +15,29 @@ const ProfilePicture = styled(Image)`
     border-radius: 20%;
   }
 `;
+const query = graphql`
+  query AboutMeQuery {
+    contentfulAbout {
+      aboutMe {
+        childMarkdownRemark {
+          rawMarkdownBody
+        }
+      }
+      profile {
+        title
+        image: resize(width: 450, quality: 100) {
+          src
+        }
+      }
+    }
+  }
+`;
 
 const About = () => (
   <Section.Container id="about">
     <Section.Header name="About me" icon="🙋‍♂️" label="person" />
     <StaticQuery
-      query={graphql`
-        query AboutMeQuery {
-          contentfulAbout {
-            aboutMe {
-              childMarkdownRemark {
-                rawMarkdownBody
-              }
-            }
-            profile {
-              title
-              image: resize(width: 450, quality: 100) {
-                src
-              }
-            }
-          }
-        }
-      `}
+      query={query}
       render={data => {
         const { aboutMe, profile } = data.contentfulAbout;
         return (
