@@ -13,8 +13,8 @@ const ProfilePicture = styled(Image)`
 
   &:hover {
     border-radius: 20%;
-  }
-`;
+  }`;
+
 const query = graphql`
   query AboutMeQuery {
     contentfulAbout {
