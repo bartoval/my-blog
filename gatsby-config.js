@@ -23,6 +23,13 @@ module.exports = client.getEntries().then(entries => {
         resolve: 'gatsby-plugin-manifest',
         options: manifestConfig,
       },
+      {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+          trackingId: "UA-132882319-1",
+          head: true,
+        },
+      },
       'gatsby-plugin-styled-components',
       {
         resolve: `gatsby-plugin-google-fonts`,
