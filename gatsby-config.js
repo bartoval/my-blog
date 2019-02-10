@@ -1,57 +1,13 @@
-const contentful = require('contentful');
-const manifestConfig = require('./manifest-config');
-require('dotenv').config();
+const config = require('./config');
+const plugins = require('./gatsby-config.plugins');
 
-const { ACCESS_TOKEN, SPACE_ID } = process.env;
-
-const client = contentful.createClient({
-  space: SPACE_ID,
-  accessToken: ACCESS_TOKEN,
-});
-
-module.exports = client.getEntries().then(entries => {
-  const aboutEntry = entries.items.find(
-    entry => entry.sys.contentType.sys.id === 'about',
-  );
-
-  const about = aboutEntry.fields;
-
-  return {
-    plugins: [
-      'gatsby-plugin-react-helmet',
-      {
-        resolve: 'gatsby-plugin-manifest',
-        options: manifestConfig,
-      },
-      {
-        resolve: `gatsby-plugin-google-analytics`,
-        options: {
-          trackingId: "UA-132882319-1",
-          head: true,
-        },
-      },
-      'gatsby-plugin-styled-components',
-      {
-        resolve: `gatsby-plugin-google-fonts`,
-        options: {
-          fonts: [`cabin`, `Open Sans`],
-        },
-      },
-      {
-        resolve: `gatsby-source-contentful`,
-        options: {
-          spaceId: SPACE_ID,
-          accessToken: ACCESS_TOKEN,
-        },
-      },
-      {
-        resolve: `gatsby-source-medium`,
-        options: {
-          username: about.mediumUser,
-        },
-      },
-      'gatsby-transformer-remark',
-      'gatsby-plugin-offline',
-    ],
-  };
-});
+module.exports = {
+  pathPrefix: config.pathPrefix,
+  siteMetadata: {
+    // Data used by some gatsby plugins
+    siteUrl: config.siteUrl,
+    title: config.siteTitle,
+    description: config.siteDescription
+  },
+  plugins,
+}
