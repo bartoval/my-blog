@@ -1,6 +1,6 @@
 ---
 title: How to build an Electron app using create-react-app.
-date: 2018-11-23
+date: 2017-12-20
 tags: [javascript, react, electron, nodejs]
 path: blog/build-electron-app-with-react
 cover: ./preview.png
