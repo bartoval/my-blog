@@ -44,11 +44,11 @@ How to traverse and manipulate the DOM is important. You might not do this on a 
 ## CSS
 At a minimum, you should know how to layout elements on a page, how to target elements using child or direct descendant selectors and when to use classes vs IDs.
 
-Responsive design: changing an elements dimensions based on the browser width size.
-Adaptive design: changing an elements dimensions based on specific break points.
-how to calculate a selector specificity and how the cascade affects attributes.
-Appropriate namespacing and naming of classnames.
-Knowing which HTML tags that best represent the content you are displaying and associated attributes should be back of the hand knowledge.
+* Responsive design: changing an elements dimensions based on the browser width size.
+* Adaptive design: changing an elements dimensions based on specific break points.
+* How to calculate a selector specificity and how the cascade affects attributes.
+* Appropriate namespacing and naming of classnames.
+* Knowing which HTML tags that best represent the content you are displaying and associated attributes should be back of the hand knowledge.
 
 ## Web Performance
 Understand Performance is the key of User experience and probably one of the most important topic.
@@ -64,9 +64,9 @@ Understand Performance is the key of User experience and probably one of the mos
 
 ## System Design
 These area is usually high-level, like build a shopping checkout service? Below are areas to think about:
-* Rendering ñ client-side (CSR), server-side (SSR) and universal rendering.
+* Rendering: client-side (CSR), server-side (SSR) and universal rendering.
 * State management such as choosing between unidirectional data flow or two-way data binding.
-* Async flow ñ your components may need to communicate in real-time with the server.
+* Async flow: your components may need to communicate in real-time with the server.
 * Separation of concerns: Model-View-Controller (MVC), Model-View-ViewModel (MVVM) and Model-View-Presenter (MVP) patterns
 * Will your design use the same implementation for the web, mobile web, and hybrid apps or will they be separate implementations?
 * Your design should consider how assets are built with dependencies (code splitting), tested (unit and integration tests) and deployed. You should also think about how you will vend assets through a CDN or inline them to reduce network latency
