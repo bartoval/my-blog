@@ -1,7 +1,7 @@
 
 module.exports = {
   pathPrefix: '/blog-me',
-  siteUrl: 'https://lgcolella.github.io',
+  siteUrl: 'https://vabar.netlify.com/',
   siteTitle: 'Horrific web of doom',
   siteDescription: 'Software and other arcane magics, by Valerio Bartolini',
   author: 'vabar',
