@@ -63,16 +63,18 @@ Understand Performance is the key of User experience and probably one of the mos
 * General implications of HTTP/2 and server-push.
 
 ## System Design
-These area is usually high-level, like build a shopping checkout service? Below are areas to think about:
+These area is usually high-level (i.e build a shopping checkout service).
+Below are areas to think about:
 * Rendering: client-side (CSR), server-side (SSR) and universal rendering.
 * State management such as choosing between unidirectional data flow or two-way data binding.
 * Async flow: your components may need to communicate in real-time with the server.
 * Separation of concerns: Model-View-Controller (MVC), Model-View-ViewModel (MVVM) and Model-View-Presenter (MVP) patterns
 * Will your design use the same implementation for the web, mobile web, and hybrid apps or will they be separate implementations?
-* Your design should consider how assets are built with dependencies (code splitting), tested (unit and integration tests) and deployed. You should also think about how you will vend assets through a CDN or inline them to reduce network latency
+* Your design should consider how assets are built with dependencies (code splitting), tested (unit and integration tests) and deployed. You should also think about how you will send assets through a CDN or inline them to reduce network latency
 
 ## Data Structures & Algorithms
-Single page apps are more common now and understanding things like memory management helps. For example, if you were asked to build a client-side spell checker, knowing common data structures and algorithms is going to make your life a lot easier.
+Single page apps are more common now and understanding things like memory management helps.
+For example, if you were asked to build a client-side spell checker, knowing common data structures and algorithms is going to make your life a lot easier.
 Having a basic understanding of Big-O time complexities and common runtimes such as O(N) and O(N Log N) won't hurt you.
 
 ## General Web Knowledge
