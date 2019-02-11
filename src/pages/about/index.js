@@ -24,20 +24,16 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         <div className={style.content}>
           <h1>Heyo folks</h1>
           <p>
-            I'm Valerio a web developer living in the sunny Malaga. Facts about
-            me:
-            <br />
-            I'm working on a fancy Mobile Betting Application
-            <br />
-            Worked professionally with 5 different programming languages
-            <br />
-            Lived abroad in Malta, Switzerland and now Spain
+            I'm Valerio but please call me Khonsu: a traveler, a dreamer that love the moon and also a web developer. 
+            Traveling is something that I can't give up, and It has become my lifestyle.
+            I have been living in 4 different countries: Italy, Malta, Switzerland and now Spain: at the moment, I'm planning to change the planet :)
+            
           </p>
           <h3>Background</h3>
           <p>
-            A native of Livorno area (Italy), I studied Computer Engineering at
+            A native of Livorno area (Italy), I studied Computer Engineering and got a MS degree at
             the University of Pisa. I used to do a lot of backend and automation
-            processing, but these days I’m more interested in web frontend
+            stuffs, but these days I’m more interested in web frontend
             topics like performance and offline-first.
           </p>
           <br />
