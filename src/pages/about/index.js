@@ -24,15 +24,16 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         <div className={style.content}>
           <h1>Heyo folks</h1>
           <p>
-            I'm Valerio but please call me Khonsu: a traveler, a dreamer that love the moon and also a web developer. 
+            Here is where I'd like to share with you my opinions, frequently wrong :), about programming and web. <br />
+            However, HELLO, I'm Valerio alias Khonsu: a traveler, a dreamer that love the moon and also a web developer. 
             Traveling is something that I can't give up, and It has become my lifestyle.
-            I have been living in 4 different countries: Italy, Malta, Switzerland and now Spain: at the moment, I'm planning to change the planet :)
+            I have been living in 4 different countries: Italy, Malta, Switzerland, now Spain and I'm planning to change planet :)
             
           </p>
           <h3>Background</h3>
           <p>
             A native of Livorno area (Italy), I studied Computer Engineering and got a MS degree at
-            the University of Pisa. I used to do a lot of backend and automation
+            the University of Pisa. I used to do Back-end and automation processing
             stuffs, but these days I’m more interested in web frontend
             topics like performance and offline-first.
           </p>
