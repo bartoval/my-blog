@@ -27,11 +27,17 @@ module.exports = {
     c: {
       description: ''
     },
+    'computer science': {
+      description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
+    },
     css: {
       description: ''
     },
     electron: {
       description: 'Electron is a framework for building cross-platform desktop applications with web technology.'
+    },
+    java: {
+      description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
     },
     javascript: {
       description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
