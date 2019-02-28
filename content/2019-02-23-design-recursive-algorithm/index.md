@@ -35,7 +35,7 @@ An example in Math and Computer Science texts, to explain the paradigm of recurs
 
 Consider the following factorial function, defined as:
 
-n! = $\prod_{i=1}^{n} i$ = 1 * 2 *···* (n - 2) * ( n- 1) * n
+![Factorial definition](./image-0.png)
 
 Through a simple demonstration, the following properties can be verified:
 
@@ -165,7 +165,7 @@ long fibonacci(long n) {
 }
 ```
 
-A more interesting example of binary recursion is the problem of searching for the minimum in a vector. Applying the technique of Divide et Impera, the vector is obtained:
+A more interesting example of binary recursion is the problem of finding minimum value in a vector. Applying the technique of Divide et Impera, we obtain:
 
 ![min vector data structure](./image-6.png)
 
@@ -174,7 +174,7 @@ A more interesting example of binary recursion is the problem of searching for t
 3. **Impera**: By inductive hypothesis, we know how to correctly solve the problem of searching for the minimum in each of the two vectors V [first..pivot] and V [pivot + 1..last], respectively indicated with MinH and MinL.
 4. **Combine**: Based on the MinH and MinL values, we calculate the minimum over the whole vector V, given by the minimum between the two:
 
-$$\begin{aligned}\text{ Minfirst, last} =& \ minimum (MinL, MinH)\end{aligned}$$
+![Min Vector formula](./image-9.png)
 
 ![min vector data flow](./image-7.png)
 
@@ -203,9 +203,8 @@ int min_search_binary_recursion(int v[], int first, int last) {
 An algorithm is called mutual recursion if it is composed by a first function that calls a second function which in turn calls the first one.
 For example, let's introducing two functions, which respectively evaluate whether or not a natural number n is odd or even. It is easy to imagine that each of these functions can be defined in terms of the other.
 
-$even(n) =\begin{cases}true \text{  for } n = 0 \\true \text{  if odd(n) is } false\end{cases}$
+![Mutual recursion example](./image-10.png)
 
-$\begin{aligned}odd(n) =& \ true \text{  if even(n) is }false\end{aligned}$
 
 
 ```c
@@ -246,7 +245,7 @@ int ackermann(int m, int n) {
 
 ##  Something more interesting: 2D images
 
-Manipulating images means working with matrices containing pixels. For example, if we want to make a rotation we could create a function that returns its transposed. Using Divid et Impera to solve this problem makes our life easy.
+Manipulating images means working with matrices containing indexes that point to a map of pixels. For example, if we want to make a rotation of this matrix we could create a function that returns its transposed. Using Divid et Impera to solve this problem makes our life easy.
 
 First of all we define an interface for our library that receive as input the original matrix, info about dimensions and its trasposed.
 ```c
@@ -257,13 +256,13 @@ void trasposition(int mat[MAXROWS][MAXCOL], int numrows, int numcol, int trasp[M
 ```
 then we resolve this problem applying divide et impera:
 
-1. **Divide**: the input matrix mat[0..numrows-1] [0..numcol-1] is splitted into three parts: 
-   * the submatrix mat[0..numrows-2] [0..numcol-2]
+1. **Divide**: the input matrix *mat[0..numrows-1] [0..numcol-1]* is splitted into three parts: 
+   * the submatrix *mat[0..numrows-2] [0..numcol-2]*
    * the righa number-1
    * the numcol-1 columns.
 2. **Base case**: when a matrix with only one element is reached, the problem admits a trivial solution being the transposed equal to the original matrix; or when the matrix is formed by a single row or a single column.]
-3. **Impera**: by inductive hypothesis the problem of the transposition of matrix  mat[0..numrows-2] [0..numcol-2] is supposed to be solved correctly.
-4. **Combine**: based on the hypothesis of the correct resolution of mat[0..numrows-2] [0..numcol-2] trasposition, we create the transposed matrix, transposing only on the last row and on the last column of the matrix original
+3. **Impera**: by inductive hypothesis the problem of the transposition of matrix *mat[0..numrows-2] [0..numcol-2]* is supposed to be solved correctly.
+4. **Combine**: based on the hypothesis of the correct resolution of *mat[0..numrows-2] [0..numcol-2]* trasposition, we create the transposed matrix, transposing only on the last row and on the last column of the matrix original
 
 ```c
 #define MAXROWS 100
@@ -273,7 +272,7 @@ void trasposition(int mat[MAXROWS][MAXCOL], int numrows, int numcol, int trasp[M
     int i,j
 
     /* Base case: matrix with 1 elem */
-    if(numrows == 1 && mi,col ==1)
+    if(numrows == 1 && col ==1)
         trasp[0][0] = mat[0][0];
 
     /* Base case: matrix with 1 row */
