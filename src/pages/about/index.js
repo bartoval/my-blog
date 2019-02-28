@@ -8,6 +8,7 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import Utils from '../../utils'
 import * as style from './index.module.less'
+import { bold } from 'ansi-colors';
 
 const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
   return (
@@ -24,17 +25,16 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         <div className={style.content}>
           <h1>Heyo folks</h1>
           <p>
-            Here is where I'd like to share with you my opinions, frequently wrong :), about programming and web. <br />
-            However, HELLO, I'm Valerio alias Khonsu: a traveler, a dreamer that love the moon and also a web developer. 
-            Traveling is something that I can't give up, and It has become my lifestyle.
-            I have been living in 4 different countries: Italy, Malta, Switzerland, now Spain and I'm planning to change planet :)
-            
+            I'm Valerio a Web Developer living in Malaga <br />
+            I want warn you that opinions and contents expressed in this blog by me are frequently wrong 🤭<br />
+            I have been living in 4 different countries: Italy, Malta, Switzerland, now Spain<br />
+            ...probably in a few years I'm going to change the planet 🤫<br />
+            Web and mobile are not just a job but also a passion, and I love the idea that what you are doing now in a few years you will have to improve it with new technologies       
           </p>
           <h3>Background</h3>
           <p>
             A native of Livorno area (Italy), I studied Computer Engineering and got a MS degree at
-            the University of Pisa. I used to do Back-end and automation processing
-            stuffs, but these days I’m more interested in web frontend
+            the University of Pisa. I worked for many years as full stack developer but these days I’m more interested in web frontend
             topics like performance and offline-first.
           </p>
           <br />
