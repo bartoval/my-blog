@@ -2,9 +2,9 @@
 module.exports = {
   pathPrefix: '/blog-me',
   siteUrl: 'https://vabar.netlify.com/',
-  siteTitle: 'Horrific web of doom',
-  siteDescription: 'Software and dark magic, by Valerio Bartolini',
-  author: 'vabar',
+  siteTitle: 'Valerio Bartolini',
+  siteDescription: 'Web development and Computer Science',
+  author: 'Valerio Bartolini',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
   pages: {
@@ -25,13 +25,13 @@ module.exports = {
       description: 'Angular is an open source web application platform.'
     },
     c: {
-      description: ''
+      description: 'C is an imperative procedural language to provide language constructs that map efficiently to machine instructions, and to require minimal runtime support.'
     },
     'computer science': {
       description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
     },
     css: {
-      description: ''
+      description: 'Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML or XML.'
     },
     electron: {
       description: 'Electron is a framework for building cross-platform desktop applications with web technology.'
@@ -43,10 +43,10 @@ module.exports = {
       description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
     },
     html: {
-      description: ''
+      description: 'HTML is the standard markup language for creating Web pages.'
     },
     webassembly: {
-      description: ''
+      description: 'WebAssembly is a binary instruction format for a stack-based virtual machine, enabling deployment on the web for client and server applications.'
     },
     nodejs: {
       name: 'Node.js',

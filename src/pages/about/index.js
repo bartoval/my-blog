@@ -8,7 +8,6 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import Utils from '../../utils'
 import * as style from './index.module.less'
-import { bold } from 'ansi-colors';
 
 const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
   return (
@@ -25,17 +24,11 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         <div className={style.content}>
           <h1>Heyo folks</h1>
           <p>
-            I'm Valerio a Web Developer living in Malaga <br />
-            I want warn you that opinions and contents expressed in this blog by me are frequently wrong 🤭<br />
-            I have been living in 4 different countries: Italy, Malta, Switzerland, now Spain<br />
-            ...probably in a few years I'm going to change the planet 🤫<br />
-            Web and mobile are not just a job but also a passion, and I love the idea that what you are doing now in a few years you will have to improve it with new technologies       
-          </p>
-          <h3>Background</h3>
-          <p>
-            A native of Livorno area (Italy), I studied Computer Engineering and got a MS degree at
-            the University of Pisa. I worked for many years as full stack developer but these days I’m more interested in web frontend
-            topics like performance and offline-first.
+            I'm a Web Developer,<br />
+            I spend my whole day, practically every day, working with HTML, CSS, and JavaScript; dabbling with Node.js<br />
+            and inhaling a wide variety of potentially useless information through a few hundred RSS feeds.<br />
+            I do my best to stay on top of changes in the state of the art so that I can enjoy work that challenges me to learn something new and stretch in a different direction.<br />
+            I build Websites and Mobile Apps ... I do it well.<br />
           </p>
           <br />
           <h3>That's what I like</h3>
