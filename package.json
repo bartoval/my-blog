@@ -24,10 +24,10 @@
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
-    "react-clamp-lines": "^2.4.0",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-lines-ellipsis": "^0.14.1",
     "react-share": "^2.4.0"
   },
   "keywords": [

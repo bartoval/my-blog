@@ -1,6 +1,6 @@
 /* Vendor imports */
 import React from 'react';
-import ClampLines from 'react-clamp-lines';
+import LinesEllipsis from 'react-lines-ellipsis'
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
@@ -36,12 +36,11 @@ const PostList = ({ posts }) => (
                   </strong>
                 ) : null}
               </label>
-              <ClampLines
+              <LinesEllipsis
                 text={excerpt}
-                lines={2}
-                ellipsis="..."
-                buttons={false}
-                innerElement="p"
+                maxLine='3'
+                ellipsis='...'
+                component='p'
               />
             </Link>
             <TagList tags={tags} />
