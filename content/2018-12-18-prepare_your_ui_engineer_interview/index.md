@@ -1,10 +1,10 @@
 ---
-title: "What fundamentals you need to know about Front-end development?"
+title: "How became a Front-end developer"
 path: blog/fundamentals-front-end-dev
 tags: [javascript, html, css]
 cover: ./preview.png
-date: 2018-12-18
-excerpt: Important knowledge to be a solid Front-end developer.
+date: '2018-12-18'
+excerpt: "Nowadays, Front-end development is more intricate than in the past. Fortunately, the fundamentals are the usual ones, and we are also experiencing technological stability regarding the front-end. We don't want to reinvent the wheel but trying to develop something that already exists improves your sense of best practice and improve your criticism especially in balancing solutions."
 ---
 Nowadays, Front-end development is more intricate than in the past. Fortunately, the fundamentals are the usual ones, and we are also experiencing technological stability regarding the front-end.
 What I want to share is my personal opinion deriving from my practical experience and readings during these years.

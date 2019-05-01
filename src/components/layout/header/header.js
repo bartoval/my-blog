@@ -1,41 +1,41 @@
 /* Vendor imports */
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import {
   FaBars,
   FaTimes,
   FaGithub,
   FaLinkedin,
   FaTwitterSquare,
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 /* App imports */
-import style from './header.module.less'
-import Config from '../../../../config'
-import Utils from '../../../utils'
+import style from './header.module.less';
+import Config from '../../../../config';
+import Utils from '../../../utils';
 
 class Header extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       lastScrollY: 0,
       fixedHeader: false,
       collapsedMenu: true,
-    }
-    this.toggleFixedHeader = this.toggleFixedHeader.bind(this)
-    this.toggleMenu = this.toggleMenu.bind(this)
+    };
+    this.toggleFixedHeader = this.toggleFixedHeader.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.toggleFixedHeader)
+    window.addEventListener('scroll', this.toggleFixedHeader);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.toggleFixedHeader)
+    window.removeEventListener('scroll', this.toggleFixedHeader);
   }
 
   toggleFixedHeader() {
     if (!this.toggleFixedHeader.animationInProgress) {
-      this.toggleFixedHeader.animationInProgress = true
+      this.toggleFixedHeader.animationInProgress = true;
       setTimeout(() => {
         this.setState(
           {
@@ -43,23 +43,20 @@ class Header extends Component {
             fixedHeader:
               window.scrollY > 100 && this.state.lastScrollY < window.scrollY,
           },
-          () => (this.toggleFixedHeader.animationInProgress = false)
-        )
-      }, 200)
+          () => (this.toggleFixedHeader.animationInProgress = false),
+        );
+      }, 200);
     }
   }
 
   toggleMenu() {
     this.setState({
       collapsedMenu: !this.state.collapsedMenu,
-    })
+    });
   }
 
   render = () => (
-    <div
-      className={style.container}
-      style={this.state.fixedHeader ? { backgroundImage: 'none' } : null}
-    >
+    <div className={style.container}>
       <div className={style.titleContainer}>
         <div className={style.title}>
           <Link to={Utils.resolvePageUrl(Config.pages.home)}>
@@ -131,7 +128,7 @@ class Header extends Component {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

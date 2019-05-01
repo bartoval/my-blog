@@ -1,13 +1,13 @@
 /* Vendor imports */
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 /* App imports */
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import Utils from '../../utils'
-import * as style from './index.module.less'
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import Utils from '../../utils';
+import * as style from './index.module.less';
 
 const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
   return (
@@ -24,11 +24,19 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         <div className={style.content}>
           <h1>Heyo folks</h1>
           <p>
-            I'm a Web Developer,<br />
-            I spend my whole day, practically every day, working with HTML, CSS, and JavaScript; dabbling with Node.js<br />
-            and inhaling a wide variety of potentially useless information through a few hundred RSS feeds.<br />
-            I do my best to stay on top of changes in the state of the art so that I can enjoy work that challenges me to learn something new and stretch in a different direction.<br />
-            I build Websites and Mobile Apps ... I do it well.<br />
+            I'm a Web and Mobile Developer,
+            <br />
+            I spend my whole day, practically every day, working with HTML, CSS,
+            and JavaScript; dabbling with Node.js
+            and inhaling a wide variety of potentially useless information
+            through a few hundred RSS feeds.
+            <br />
+            I do my best to stay on top of changes in the state of the art so
+            that I can enjoy work that challenges me to learn something new and
+            stretch in a different direction.
+            <br />
+            I build Websites and Mobile Apps ... I do it well.
+            <br />
           </p>
           <br />
           <h3>That's what I like</h3>
@@ -38,8 +46,8 @@ const About = ({ data: { profilePhoto, skillIcons, toolIcons } }) => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 About.propTypes = {
   data: PropTypes.shape({
@@ -51,13 +59,13 @@ About.propTypes = {
     skillIcons: PropTypes.object.isRequired,
     toolIcons: PropTypes.object.isRequired,
   }),
-}
+};
 
 const ImageList = ({ edges }) => (
   <div className={style.iconsContainer}>
     {edges
       .sort((edgeA, edgeB) =>
-        edgeA.node.name.toLowerCase() > edgeB.node.name.toLowerCase() ? 1 : -1
+        edgeA.node.name.toLowerCase() > edgeB.node.name.toLowerCase() ? 1 : -1,
       )
       .map(({ node: { name, childImageSharp } }) => (
         <div className={style.iconWrapper} key={name}>
@@ -72,7 +80,7 @@ const ImageList = ({ edges }) => (
         </div>
       ))}
   </div>
-)
+);
 
 ImageList.propTypes = {
   edges: PropTypes.arrayOf(
@@ -83,9 +91,9 @@ ImageList.propTypes = {
           fixed: PropTypes.object.isRequired,
         }).isRequired,
       }).isRequired,
-    })
+    }),
   ).isRequired,
-}
+};
 
 export const query = graphql`
   {
@@ -121,7 +129,7 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 // Use to set specific icons names
 const iconsNameMap = {
   css: 'CSS',
@@ -130,6 +138,6 @@ const iconsNameMap = {
   nodejs: 'Node.js',
   vuejs: 'Vue.js',
   gruntjs: 'Grunt.js',
-}
+};
 
-export default About
+export default About;

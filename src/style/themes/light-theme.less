@@ -1,29 +1,31 @@
 
 // Theme
-@theme-color: #f7f7f7;
-@theme-text: #6C6C6C;
+@theme-color: #ffffff;
+@theme-color-container: #ffffff;
+@theme-text: #1d1d1d;
 @theme-title: @theme-text;
 
 // Label
-@label-theme: @theme-color;
-@label-text: @theme-text;
-@label-border: 1px solid @theme-text;
-@label-hover: @theme-text;
-@label-hover-text: @theme-color;
+@label-theme: #f3e5f5;
+@label-text: #6200ee;
+@label-border: 0px solid #D1C4E9;
+@label-hover: #D1C4E9;
+@label-hover-text: @theme-text;
 @label-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) inset;
 
 // Label 2
-@label-theme-2: @label-theme;
-@label-text-2: @label-text;
-@label-border-2: @label-border;
+@label-theme-2: @theme-color;
+@label-text-2: @theme-text;
+@label-border-2: @theme-color;
 
 // Header
-@header-theme: #f5f5f5;
-@header-text: @theme-text;
+@header-theme: #6200ee;
+@header-text: #ffffff;
 @header-border: 1px solid rgba(0, 0, 0, 0.1);
+@header-height:72px;
 
 // Post
-@post-theme: @theme-color;
+@post-theme: @theme-color-container;
 @post-text: @theme-title;
 @post-title: @theme-text;
 @post-highlight: #091729;
@@ -56,14 +58,14 @@
 
 // Padding
 @padding-zero: 0em;
-@padding-small: 9px;
-@padding-medium: 18px;
+@padding-small: 6px;
+@padding-medium: 24px;
 
 // Transition
 @transition-time: .5s;
 
 // Text shadow
-@text-shadow-title: 5px 5px @color-transparent;
+@text-shadow-title: none;
 @text-shadow-post-title: 0 5px 10px rgba(0,0,0,.3);
 
 // Box shadow
@@ -71,4 +73,4 @@
 @box-shadow-cover: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
 // Texture
-@texture: none;
+@texture: url('../textures/header-background.jpg');

@@ -2,8 +2,8 @@
 module.exports = {
   pathPrefix: '/blog-me',
   siteUrl: 'https://vabar.netlify.com/',
-  siteTitle: 'Valerio Bartolini',
-  siteDescription: 'Web development and Computer Science',
+  siteTitle: 'Turning Coffee into Code',
+  siteDescription: 'by Valerio Bartolini',
   author: 'Valerio Bartolini',
   postsForArchivePage: 3,
   defaultLanguage: 'en',

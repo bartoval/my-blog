@@ -1,23 +1,23 @@
 /* Vendor imports */
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql, Link } from 'gatsby';
+import Image from 'gatsby-image';
 /* App imports */
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import Config from '../../../config'
-import Utils from '../../utils'
-import style from './tag.module.less'
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+import Config from '../../../config';
+import Utils from '../../utils';
+import style from './tag.module.less';
 
 const Tag = ({ data }) => {
   const rawTags = data.allMarkdownRemark.edges
     .map(edge => edge.node.frontmatter.tags)
-    .reduce((prev, curr) => prev.concat(curr))
+    .reduce((prev, curr) => prev.concat(curr));
   const tags = rawTags
     .filter((tag, index) => index === rawTags.indexOf(tag))
-    .sort() // Remove duplicates and sort values
-  const tagPage = Config.pages.tag
+    .sort(); // Remove duplicates and sort values
+  const tagPage = Config.pages.tag;
 
   return (
     <Layout title="Tags">
@@ -52,8 +52,8 @@ const Tag = ({ data }) => {
         ))}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 Tag.propTypes = {
   data: PropTypes.shape({
@@ -65,7 +65,7 @@ Tag.propTypes = {
               tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
             }).isRequired,
           }).isRequired,
-        }).isRequired
+        }).isRequired,
       ).isRequired,
     }).isRequired,
     allFile: PropTypes.shape({
@@ -77,11 +77,11 @@ Tag.propTypes = {
               fluid: PropTypes.object.isRequired,
             }).isRequired,
           }).isRequired,
-        }).isRequired
+        }).isRequired,
       ).isRequired,
     }).isRequired,
   }).isRequired,
-}
+};
 
 export const query = graphql`
   {
@@ -107,6 +107,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Tag
+export default Tag;
