@@ -1,12 +1,12 @@
 /* Vendor imports */
-import React from 'react'
+import React from 'react';
 /* App imports */
-import style from './footer.module.less'
+import style from './footer.module.less';
 
 const Footer = () => (
   <div className={style.container}>
-    <p></p>
+    <p />
   </div>
-)
+);
 
-export default Footer
+export default Footer;

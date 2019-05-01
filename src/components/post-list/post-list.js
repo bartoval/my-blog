@@ -1,17 +1,20 @@
 /* Vendor imports */
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import React from 'react';
+import ClampLines from 'react-clamp-lines';
+import { FaRegCalendarAlt } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 /* App imports */
-import style from './post-list.module.less'
-import TagList from '../tag-list'
-import Utils from '../../utils'
+import style from './post-list.module.less';
+import TagList from '../tag-list';
+import Utils from '../../utils';
 
 const PostList = ({ posts }) => (
   <div className={style.container}>
     {posts.map((post, index) => {
-      const { title, date, path, tags, cover, excerpt } = post.node.frontmatter
+      const { title, date, path, tags, cover, excerpt } = post.node.frontmatter;
+      debugger;
       return (
         <div key={title} className={style.post}>
           <div className={style.cover}>
@@ -25,17 +28,29 @@ const PostList = ({ posts }) => (
           </div>
           <div className={style.content}>
             <Link to={Utils.resolvePageUrl(path)}>
-              {date ? <label>{date}</label> : null}
               <h2>{title}</h2>
-              <p>{excerpt}</p>
+              <label>
+                {date ? (
+                  <strong>
+                    <FaRegCalendarAlt /> <label>{date}</label>{' '}
+                  </strong>
+                ) : null}
+              </label>
+              <ClampLines
+                text={excerpt}
+                lines={2}
+                ellipsis="..."
+                buttons={false}
+                innerElement="p"
+              />
             </Link>
             <TagList tags={tags} />
           </div>
         </div>
-      )
+      );
     })}
   </div>
-)
+);
 
 PostList.propTypes = {
   posts: PropTypes.arrayOf(
@@ -53,8 +68,8 @@ PostList.propTypes = {
           }).isRequired,
         }),
       }),
-    })
+    }),
   ),
-}
+};
 
-export default PostList
+export default PostList;

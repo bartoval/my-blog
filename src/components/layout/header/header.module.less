@@ -6,15 +6,15 @@
     left: 0px;
     width: 100%;
     box-sizing: border-box;
+    background: @header-theme;
+    background: linear-gradient(to right, #8e2de2, #6200ee); 
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
     padding: @padding-small @padding-medium;
-    border-bottom: @header-border;
-    background-color: @header-theme;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
     color: @header-text;
-    background-image: @texture;
     font-family: "CustomBoldFont", sans-serif;
     font-size: @font-size;
     & + div {
@@ -50,7 +50,7 @@
     }
     &:hover {
         h4, p {
-            color: @theme-title;
+            color: yellow;
         }
     }
 }
@@ -94,7 +94,7 @@
                 transition: @transition-time color;
                 &:hover {
                     cursor: pointer;
-                    color: @theme-title;
+                    color: yellow;
                 }
             }
         }

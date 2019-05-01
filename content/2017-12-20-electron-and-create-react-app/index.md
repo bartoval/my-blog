@@ -1,10 +1,11 @@
 ---
-title: How to build an Electron app using create-react-app.
-date: 2017-12-20
+title: How to build an Electron app using React
+date: '2017-12-20'
 tags: [javascript, react, electron, nodejs]
 path: blog/build-electron-app-with-react
 cover: ./preview.png
-excerpt: Build a fantastic Electron app from scratch using create-react-app.
+excerpt: "React is Facebook’s JavaScript view framework and Electron is GitHub’s framework for building cross-platform desktop apps in JavaScript.\n
+Most use webpack for the configuration necessary for React development. webpack is a configuration and build tool that most of the React community has adopted over alternatives like Gulp and Grunt."
 ---
 I recently built an [Electron](https://electronjs.org/ "ElectronJS site") app using [create-react-app](https://github.com/facebook/create-react-app "create-react-app repository"). I didn’t need to muck about with Webpack, or “eject” my app, either. I’ll walk you through how I accomplished this.
 

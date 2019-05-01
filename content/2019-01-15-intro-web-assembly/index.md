@@ -1,10 +1,10 @@
 ---
-title: 'Introduction to Web Assembly with Javascript and C'
+title: 'Quick introduction to Web Assembly'
 tags: [webassembly, c, javascript]
-date: 2019-01-15
+date: '2019-01-15'
 path: blog/intro-web-assembly
 cover: ./preview.png
-excerpt: How configure your first webassembly app in Javascript and C.
+excerpt: "Javascript doesn't provide the performance of a low-level language, and also many features of modern high-language are not available. Unfortunately, it's the only language that's every browser can understand, precisely browser interpret Javascript line by line and then compile frequently used code to binary. Typically this process is called just-in-time-compilation (JIT)."
 ---
 
 Javascript doesn't provide the performance of a low-level language, and also many features of modern high-language are not available. Unfortunately, it's the only language that's every browser can understand, precisely browser interpret Javascript line by line and then compile frequently used code to binary. Typically this process is called just-in-time-compilation (JIT).
