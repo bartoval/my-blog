@@ -10,6 +10,11 @@
 
 /* Font */
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
 .font('CustomFont', normal, 'Nunito', 'Regular');
 .font('CustomFont', bold, 'Montserrat', 'Bold');
 .font('CustomBoldFont', bold, 'Nunito', 'Bold');
@@ -19,9 +24,8 @@
 
 body {
     font-family: "CustomFont", sans-serif;
-    font-size: @font-size * 1.2;
-    background-color: @theme-color;
-    background-image: @texture;
+    font-size: @font-size ;
+    background-color:@theme-color;
     color: @theme-text;
     margin: @margin-zero;
 }

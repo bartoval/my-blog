@@ -1,11 +1,11 @@
 /* Vendor imports */
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 /* App imports */
-import Config from '../../../config'
-import Utils from '../../utils'
+import Config from '../../../config';
+import Utils from '../../utils';
 
 function SEO({
   title,
@@ -25,16 +25,16 @@ function SEO({
         const metaKeywords =
           keywords && keywords.length > 0
             ? { name: 'keywords', content: keywords.join(', ') }
-            : []
+            : [];
         const pageUrl = Utils.resolvePageUrl(
           Config.siteUrl,
           Config.pathPrefix,
-          path
-        )
+          path,
+        );
         const metaImageUrl = Utils.resolveUrl(
           Config.siteUrl,
-          imageUrl ? imageUrl : data.file.childImageSharp.fixed.src
-        )
+          imageUrl ? imageUrl : data.file.childImageSharp.fixed.src,
+        );
 
         return (
           <Helmet
@@ -76,16 +76,16 @@ function SEO({
                       href: Utils.resolvePageUrl(
                         Config.siteUrl,
                         Config.pathPrefix,
-                        obj.path
+                        obj.path,
                       ),
                     }))
-                  : []
+                  : [],
               )}
           />
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 SEO.propTypes = {
@@ -100,15 +100,15 @@ SEO.propTypes = {
     PropTypes.shape({
       hreflang: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
-    })
+    }),
   ),
   meta: PropTypes.arrayOf(
     PropTypes.shape({
       property: PropTypes.string.isRequired,
       content: PropTypes.string.isRequired,
-    })
+    }),
   ),
-}
+};
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -120,5 +120,5 @@ const detailsQuery = graphql`
       }
     }
   }
-`
-export default SEO
+`;
+export default SEO;

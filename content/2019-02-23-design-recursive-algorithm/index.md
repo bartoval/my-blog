@@ -1,10 +1,12 @@
 ---
-title: 'Design Recursive Algorithms'
+title: 'Guide to design recursive algorithms'
 tags: [computer science, c]
-date: 2019-02-24
+date: '2019-02-24'
 path: blog/divide-et-impera
 cover: ./preview.png
-excerpt: Digging into the use of the Divide et Impera paradigm.
+excerpt: "One of the most important and practical design techniques in Computer Science is the Divide et Impera.\n
+It's based on recursion, which, starting from a problem, identifies some problems under the same type but simpler and, if resolved, they allow to build the solution of the original problem.
+For us, writing recursive code is simpler and more elegant because many real problems have a recursive structure."
 ---
 
 # Design of recursive algorithms
