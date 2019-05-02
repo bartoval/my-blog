@@ -14,7 +14,6 @@ const PostList = ({ posts }) => (
   <div className={style.container}>
     {posts.map((post, index) => {
       const { title, date, path, tags, cover, excerpt } = post.node.frontmatter;
-      debugger;
       return (
         <div key={title} className={style.post}>
           <div className={style.cover}>

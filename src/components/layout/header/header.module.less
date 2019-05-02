@@ -7,13 +7,13 @@
     width: 100%;
     box-sizing: border-box;
     background: @header-theme;
-    background: linear-gradient(to right, #8e2de2, #6200ee); 
+    background: @header-theme-gradient;
+    box-shadow: @header-box-shadow;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
     padding: @padding-small @padding-medium;
-    box-shadow: 2px 4px 10px rgba(0,0,0,.2);
     color: @header-text;
     font-family: "CustomBoldFont", sans-serif;
     font-size: @font-size;

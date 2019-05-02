@@ -1,5 +1,5 @@
 ---
-title: "How became a Front-end developer"
+title: "How to became a Front-End developer"
 path: blog/fundamentals-front-end-dev
 tags: [javascript, html, css]
 cover: ./preview.png
