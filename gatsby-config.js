@@ -117,7 +117,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://valeriobartolini.us18.list-manage.com/subscribe/post?u=3c1b864494c70f2f70789fcac&amp;id=b6db356073',
+        endpoint: 'https://valeriobartolini.us18.list-manage.com/subscribe/post?u=42a340e97139b214960187d60&amp;id=232ca250eb',
       },
     },
     {
