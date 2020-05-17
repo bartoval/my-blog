@@ -71,10 +71,8 @@ const About: React.FunctionComponent<AboutProps> = () => {
       <AboutDetails>
         <h2>Hey there, what’s up?</h2>
         <p>
-          I'm a Software Engineer specializing in building scalable,
-          high-performance web & mobile application. My main concern is
-          creating more value into the application so that can help
-          customers to grow their business.
+          I'm a Software Engineer focusing on Frontend development but I worked for many years as Full Stack.
+          Also I have a MS degree in Computer Engineering... just to find an alternative to Stack Overflow &#128517;.
         </p>
         <p>
           I do my best to stay on top of changes in the state of the art so that I can enjoy work that challenges me to learn something new and stretch in a different direction.

@@ -6,8 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `Turning coffee into code`,
     author: `Valerio`,
-    about: `It’s OK to figure out murder mysteries, but you shouldn’t need to figure out code. You should be able to read it.`,
-    description: `A Personal Blog about coding, technology, methodologies, algorithms, software engineering, frontend development`,
+    about: `Software Engineer specialized in Web & Mobile. So, yes I like everything about Javascript and Browser issues.`,
+    description: `A Personal Blog about coding, technology, methodologies, algorithms, software engineering, browser, javascript, frontend development`,
     siteUrl: `https://valeriobartolini.com`,
   },
   plugins: [
