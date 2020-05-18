@@ -36,6 +36,8 @@ For example my App to book hotels should have:
 - End Date
 - A button to perform search
 
+![Wireframe minimal](./image-0.png)
+
 Right? In case we build a search engine we have almost done!
 
 ## Avoid details at the beginning
@@ -46,6 +48,8 @@ Instead, try to find different solutions and see how the features can integrate 
 ### Design in greyscale
 
 That's pretty useful because, without color, you are forced to use spacing and contrast to do all of the heavy lifting. That's no easy, but you are obliged to create a clear UI with a strong hierarchy. Then you can enhance all with colors.
+
+![Wireframe minimal](./image-1.png)
 
 ### Start with Sketches or Wireframes
 
