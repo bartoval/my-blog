@@ -6,20 +6,27 @@ export const initialState = {
   isError: false,
   searchQuery: "",
 }
+
+enum ActionEnum {
+  SetData = 'SET_DATA',
+  SetSearch = 'SET_SEARCH',
+  SetSearchQuery = 'SET_SEARCH_QUERY'
+}
+
 export default function SearchReducer(state: any, action: any) {
   switch (action.type) {
-    case "SET_DATA":
+    case ActionEnum.SetData:
       return {
         ...state,
         totalData: action.payload,
       }
-    case "SET_SEARCH":
+    case ActionEnum.SetSearch:
       return {
         ...state,
         search: action.payload,
         isLoading: false,
       }
-    case "SET_SEARCH_QUERY":
+    case ActionEnum.SetSearchQuery:
       return {
         ...state,
         searchQuery: action.payload.searchQuery,
