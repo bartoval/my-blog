@@ -1,6 +1,5 @@
 language: node_js
 node_js:
-  - "10"
   - "12"
   - "node"
 cache:
@@ -9,13 +8,8 @@ cache:
     - .cache
     - node_modules
 install:
-  - yarn install
+  - npm install
 script:
-  - yarn build --prefix-paths
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: public
+  - npm run build --prefix-paths
   on:
     branch: master
