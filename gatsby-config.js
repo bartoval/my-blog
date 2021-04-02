@@ -6,8 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `Turning coffee into code`,
     author: `Valerio`,
-    about: `Software Engineer specialized in Web & Mobile. So, yes I like everything about Javascript and Browser issues.`,
-    description: `A Personal Blog about coding, technology, methodologies, algorithms, software engineering, browser, javascript, frontend development`,
+    about: `Developer who enjoy programming, listening traditional Japanese music and eating a lot of sushi.`,
+    description: `A Personal Blog about coding, technology, methodologies, algorithms, software engineering, browser, javascript, frontend development, react, vue, node`,
     siteUrl: `https://valeriobartolini.com`,
   },
   plugins: [

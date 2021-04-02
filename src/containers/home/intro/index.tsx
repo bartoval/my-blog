@@ -24,11 +24,6 @@ const SocialLinks = [
     tooltip: 'Linked In',
   },
   {
-    icon: <IoLogoTwitter />,
-    url: 'https://twitter.com/valerio_bart',
-    tooltip: 'Twitter',
-  },
-  {
     icon: <IoLogoGithub />,
     url: 'https://github.com/bayesianforce',
     tooltip: 'Github',
