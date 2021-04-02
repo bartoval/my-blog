@@ -119,21 +119,6 @@ module.exports = {
       options: {
         endpoint: 'https://valeriobartolini.us18.list-manage.com/subscribe/post?u=42a340e97139b214960187d60&amp;id=232ca250eb',
       },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `500`, `600`, `700`],
-          },
-          {
-            family: `Fira Sans`,
-            variants: [`100`, `300`, `400`, `500`, `600`, `700`],
-          },
-        ],
-      },
-    },
+    }
   ],
 };

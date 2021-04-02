@@ -66,8 +66,8 @@ const About: React.FunctionComponent<AboutProps> = () => {
       <AboutDetails>
         <h2>Hey there, what’s up?</h2>
         <p>
-          I'm a Developer focusing on Frontend development but I worked for many years as Full Stack.
-          My default go-to framework is React but I'm fine with Vue too but in my opinion Javascript Knowledge and web patterns in general are by far more important.
+          I'm a Developer focusing on Frontend with some years of experience as a Full Stack.
+          My default go-to framework is React but I'm fine with Vue too, however in my opinion having Knowledge about Javascript and Web architectures are more important and give you a flexible mindset.
           I do my best to stay on top of changes in the state of the art so that I can enjoy work that challenges me to learn something new and stretch in a different direction.
         </p>
         <p>
