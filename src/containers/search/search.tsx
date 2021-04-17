@@ -86,12 +86,15 @@ function Search() {
   return (
     <SearchWrapper>
       <SearchForm onSubmit={handleSubmit}>
-        <input
-          id="Search"
-          value={searchQuery}
-          onChange={searchData}
-          placeholder="Enter Your Search Topic"
-        />
+        <label id="searchLabel">
+          <h4>Enter Your Search Topic:</h4>
+          <input
+            id="Search"
+            value={searchQuery}
+            onChange={searchData}
+            aria-labelledby="searchLabel"
+          />
+        </label>
       </SearchForm>
       <SearchResult>
         {queryResults.length == 0 && searchQuery !== '' ? (
@@ -123,7 +126,7 @@ function Search() {
           </Scrollbars>
         )}
       </SearchResult>
-    </SearchWrapper>
+    </SearchWrapper >
   );
 }
 

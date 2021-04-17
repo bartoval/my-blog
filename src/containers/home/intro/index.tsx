@@ -10,18 +10,12 @@ import {
   IntroInfo,
 } from './style';
 import {
-  IoLogoLinkedin,
   IoLogoGithub,
 } from 'react-icons/io';
 
 type IntroProps = {};
 
 const SocialLinks = [
-  {
-    icon: <IoLogoLinkedin />,
-    url: 'https://www.linkedin.com/in/valeriobartolini/',
-    tooltip: 'Linked In',
-  },
   {
     icon: <IoLogoGithub />,
     url: 'https://github.com/bayesianforce',

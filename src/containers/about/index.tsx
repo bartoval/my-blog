@@ -3,9 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import SocialProfile from '../../components/social-profile/social-profile';
 import {
-  IoLogoTwitter,
   IoLogoGithub,
-  IoLogoLinkedin,
 } from 'react-icons/io';
 import {
   AboutWrapper,
@@ -20,11 +18,6 @@ const SocialLinks = [
     icon: <IoLogoGithub />,
     url: 'https://github.com/bayesianforce',
     tooltip: 'Github',
-  },
-  {
-    icon: <IoLogoLinkedin />,
-    url: 'https://www.linkedin.com/in/valeriobartolini/',
-    tooltip: 'Linked In',
   },
 ];
 
