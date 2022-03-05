@@ -12,6 +12,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WDK5B9B",
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         minify: true, // Breaks styles if not set to false
@@ -79,13 +86,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sharp`,
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-2Z03QD6T8E',
-        head: true,
-      },
     },
     {
       resolve: `gatsby-plugin-feed`,
