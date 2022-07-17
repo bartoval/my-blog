@@ -10,7 +10,7 @@ import {
   IntroInfo,
 } from './style';
 import {
-  IoLogoGithub,
+  IoLogoGithub, IoLogoLinkedin, IoLogoTwitter,
 } from 'react-icons/io';
 
 type IntroProps = {};
@@ -18,8 +18,18 @@ type IntroProps = {};
 const SocialLinks = [
   {
     icon: <IoLogoGithub />,
-    url: 'https://github.com/bayesianforce',
+    url: 'https://github.com/bartoval',
     tooltip: 'Github',
+  },
+  {    
+    icon: <IoLogoTwitter />,
+    url: 'https://twitter.com/ValerioBartoli3',
+    tooltip: 'Twitter'
+  },
+  {    
+    icon: <IoLogoLinkedin />,
+    url: 'https://www.linkedin.com/feed/',
+    tooltip: 'Linkedin'
   },
 ];
 

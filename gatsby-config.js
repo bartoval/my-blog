@@ -4,9 +4,11 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Turning coffee into code`,
+    title: `Disassembled`,
     author: `Valerio`,
-    about: `Developer who enjoy programming, listening traditional Japanese music and eating a lot of sushi.`,
+    about: `I'm a developer who spend most of his time programming in Javascript. I'm curious about new frameworks and technologies and I enjoy make weird experiments to understand them in deep. I embrace the Open source culture and other than I like play football and more in general keep me healthy. 
+    Currently I'm working at Red Hat, the company behind the Linux Operating system and OpenShift, as a Senior software engineer in the Middleware Networking team, and I'm focusing building a next gen Console for https://skupper.io.
+    Moreover I'm contributing to https://www.patternfly.org, an enterprise and accessible design system.`,
     description: `A Personal Blog about coding, technology, methodologies, algorithms, software engineering, browser, javascript, frontend development, react, vue, node`,
     siteUrl: `https://valeriobartolini.com`,
   },
